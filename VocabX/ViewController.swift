@@ -34,6 +34,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let vocabWord: VocabWord = self.allVocabWords[indexPath.row]
         
+    
+        let randomColor = colorPalete[Int(arc4random_uniform(UInt32(colorPalete.count)))]
+        
+        cell.view.backgroundColor = randomColor
+    
         
         cell.vocabWordInfo = vocabWord
         
@@ -42,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.view.layer.cornerRadius = CGFloat(radius)
     
-        let randomColor = colorPalete[Int(arc4random_uniform(UInt32(colorPalete.count)))]
+        
         
 //        let hue = 1 / CGFloat(allVocabWords.count) * CGFloat(indexPath.row)
 //
@@ -50,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //
 //        cell.view.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
         
-        cell.view.backgroundColor = randomColor
+        
             
 //        cell.POSLabel.textColor = UIColor(hue: CGFloat(revHue), saturation: 0.5, brightness: 1, alpha: 1)
         
@@ -58,6 +63,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
         
         let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         

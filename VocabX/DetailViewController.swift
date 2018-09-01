@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     var dataSource : VocabWord?
     
     @IBAction func flipCard(_ sender: Any) {
-        flipCard()
+        flipCard(dataSource!)
     }
     
     
@@ -31,8 +31,14 @@ class DetailViewController: UIViewController {
 
         detailView.bringSubview(toFront: buttonCard)
         
+//        mainLabel.text = dataSource?.name
+//        subLabel.text = dataSource?.definition
+        
+        
+        subLabel.text = " "
         mainLabel.text = dataSource?.name
-        subLabel.text = dataSource?.definition
+        isOpen = true
+       
         
         //let radius = cell.view.frame.height / 2
         
@@ -60,15 +66,17 @@ class DetailViewController: UIViewController {
     }
     */
 
-    func flipCard() {
+    func flipCard(_ data : VocabWord) {
         print("button pressed")
         if isOpen {
             isOpen = false
-            
+            subLabel.text = data.definition
+            mainLabel.text = data.POS
             UIView.transition(with: detailView, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
         }else{
             isOpen = true
-            
+            subLabel.text = "hhhh"
+            mainLabel.text = data.name
             UIView.transition(with: detailView, duration: 0.4, options: .transitionFlipFromRight, animations: nil, completion: nil)
         }
         
