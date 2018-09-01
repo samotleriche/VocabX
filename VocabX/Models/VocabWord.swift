@@ -52,12 +52,10 @@ struct VocabWord {
             [VocabWord.NameKey : "abbreviate", VocabWord.DefinitionKey : "To shorten something", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
             [VocabWord.NameKey : "abdicate", VocabWord.DefinitionKey : "Renounce or give up a position, right, or responsibility.", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
             [VocabWord.NameKey : "aberrant", VocabWord.DefinitionKey : "Abnormal or deviant; Departing from an accepted standard", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "abase", VocabWord.DefinitionKey : "Behave in a way that belittles or degrades (someone).", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "abash", VocabWord.DefinitionKey : "Make (someone) feel embarrassed, disconcerted, or ashamed", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "abate", VocabWord.DefinitionKey : "Become less intense or widespread", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "abbreviate", VocabWord.DefinitionKey : "To shorten something", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "abdicate", VocabWord.DefinitionKey : "Renounce or give up a position, right, or responsibility.", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
-            [VocabWord.NameKey : "aberrant", VocabWord.DefinitionKey : "Abnormal or deviant; Departing from an accepted standard", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "abet", VocabWord.DefinitionKey : "Assist, usually regarding something wrong or illegal.", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abeyance", VocabWord.DefinitionKey : "A tempororary state of suspension or disuse.", VocabWord.POSKey : "noun", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abject", VocabWord.DefinitionKey : "(of a condition) wretched or as low as possible; lacking pride or dignity.)", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abjure", VocabWord.DefinitionKey : "renounce solemnly", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
         ]
         
         
