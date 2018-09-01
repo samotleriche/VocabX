@@ -200,17 +200,73 @@
             </objects>
             <point key="canvasLocation" x="-471" y="-670"/>
         </scene>
-        <!--View Controller-->
+        <!--Testing View Controller-->
         <scene sceneID="uWZ-dm-qfT">
             <objects>
-                <viewController id="vt4-vw-C7p" sceneMemberID="viewController">
+                <viewController id="vt4-vw-C7p" customClass="TestingViewController" customModule="VocabX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dU-m6-duE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ACm-7J-nLG">
+                                <rect key="frame" x="15" y="142" width="345" height="170.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYF-bW-Ip8">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGY-JM-QtW">
+                                        <rect key="frame" x="0.0" y="20.5" width="345" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruh-CX-c0J">
+                                        <rect key="frame" x="0.0" y="50.5" width="345" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDH-it-OOW">
+                                        <rect key="frame" x="0.0" y="80.5" width="345" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bc-R3-HLS">
+                                        <rect key="frame" x="0.0" y="110.5" width="345" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-e1-2PW">
+                                        <rect key="frame" x="0.0" y="140.5" width="345" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UG-pR-nkN">
+                                <rect key="frame" x="171" y="335" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="vt4-vw-C7p" eventType="touchUpInside" id="FvU-Ql-9ma"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ACm-7J-nLG" firstAttribute="leading" secondItem="iC8-ur-JSE" secondAttribute="leading" constant="15" id="8yJ-n3-NbY"/>
+                            <constraint firstItem="ACm-7J-nLG" firstAttribute="top" secondItem="iC8-ur-JSE" secondAttribute="top" constant="78" id="xGL-R0-iR3"/>
+                            <constraint firstItem="iC8-ur-JSE" firstAttribute="trailing" secondItem="ACm-7J-nLG" secondAttribute="trailing" constant="15" id="xyx-rK-H5P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iC8-ur-JSE"/>
                     </view>
                     <navigationItem key="navigationItem" id="EU9-GA-8uo"/>
+                    <connections>
+                        <outlet property="button1" destination="fGY-JM-QtW" id="l9h-vd-rzT"/>
+                        <outlet property="button2" destination="Ruh-CX-c0J" id="uFI-3U-GLv"/>
+                        <outlet property="button3" destination="nDH-it-OOW" id="jkz-2J-ROH"/>
+                        <outlet property="button4" destination="4Bc-R3-HLS" id="yQ7-el-WRV"/>
+                        <outlet property="button5" destination="j2a-e1-2PW" id="a5l-g9-qYz"/>
+                        <outlet property="label1" destination="AYF-bW-Ip8" id="tjt-0i-TqR"/>
+                        <outlet property="nextQ" destination="2UG-pR-nkN" id="WRL-Wh-XRL"/>
+                        <outlet property="stackView1" destination="ACm-7J-nLG" id="h2D-Tb-nyx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRu-fW-DyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,11 +292,11 @@
             </objects>
             <point key="canvasLocation" x="-62" y="190"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="5Lr-Wz-r5r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VK0-Xk-rjx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="spw-m2-ZnF"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="spw-m2-ZnF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8iv-4l-sdY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
