@@ -47,16 +47,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.view.layer.cornerRadius = CGFloat(radius)
     
-        
-        
 //        let hue = 1 / CGFloat(allVocabWords.count) * CGFloat(indexPath.row)
 //
 //        let revHue = 1.truncatingRemainder(dividingBy: (Double)(hue))
 //
 //        cell.view.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
-        
-        
-            
+
 //        cell.POSLabel.textColor = UIColor(hue: CGFloat(revHue), saturation: 0.5, brightness: 1, alpha: 1)
         
         return cell
@@ -64,21 +60,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-        
         let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
         detailVC.dataSource = allVocabWords[indexPath.row]
         
         navigationController?.pushViewController(detailVC, animated: true)
         
-        
-        
-        
     }
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -56,6 +56,10 @@ struct VocabWord {
             [VocabWord.NameKey : "Abeyance", VocabWord.DefinitionKey : "A tempororary state of suspension or disuse.", VocabWord.POSKey : "noun", VocabWord.isLikedKey : "True"],
             [VocabWord.NameKey : "Abject", VocabWord.DefinitionKey : "(of a condition) wretched or as low as possible; lacking pride or dignity.)", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
             [VocabWord.NameKey : "Abjure", VocabWord.DefinitionKey : "renounce solemnly", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abnegate", VocabWord.DefinitionKey : "The act of renouncing or rejecting something.", VocabWord.POSKey : "noun", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abominate", VocabWord.DefinitionKey : "loathe or hate.", VocabWord.POSKey : "verb", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Aboriginal", VocabWord.DefinitionKey : "The first of its kind in a region; indigenous.", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
+            [VocabWord.NameKey : "Abortive", VocabWord.DefinitionKey : "Failing to produce the inteded result; unsuccessful or fruitless.", VocabWord.POSKey : "adjective", VocabWord.isLikedKey : "True"],
         ]
         
         

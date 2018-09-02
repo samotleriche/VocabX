@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -180,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T4-rE-px0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924" y="33.733133433283363"/>
+            <point key="canvasLocation" x="1862" y="82"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iH7-ev-gUy">
@@ -194,6 +195,7 @@
                     <connections>
                         <segue destination="LVp-Kr-WK9" kind="relationship" relationship="viewControllers" id="Geu-Pk-jeG"/>
                         <segue destination="VK0-Xk-rjx" kind="relationship" relationship="viewControllers" id="Vgc-Ph-DSn"/>
+                        <segue destination="B6t-Vd-bqY" kind="relationship" relationship="viewControllers" id="Mz5-Kz-Ph9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I26-77-XQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRu-fW-DyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280.8" y="-751.57421289355329"/>
+            <point key="canvasLocation" x="1420" y="-629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b4J-ok-K37">
@@ -290,7 +292,71 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFQ-Wl-syz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="190"/>
+            <point key="canvasLocation" x="26" y="54"/>
+        </scene>
+        <!--Word Collection-->
+        <scene sceneID="pGC-HY-mRL">
+            <objects>
+                <collectionViewController id="UGR-QK-bB8" customClass="VocabCollectionViewController" customModule="VocabX" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="SMp-GV-ruF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="azB-bX-8l8">
+                            <size key="itemSize" width="114" height="96"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellCol" id="i4O-jG-g0Q" customClass="CollectionViewCell" customModule="VocabX" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="114" height="96"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="3R0-jH-dcc">
+                                            <rect key="frame" x="22" y="11" width="71" height="74"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upw-A5-2Cb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="80"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="upw-A5-2Cb" firstAttribute="top" secondItem="3R0-jH-dcc" secondAttribute="top" id="Hyu-4x-Giu"/>
+                                                <constraint firstItem="upw-A5-2Cb" firstAttribute="leading" secondItem="3R0-jH-dcc" secondAttribute="leading" id="U7r-ya-8aF"/>
+                                                <constraint firstAttribute="trailing" secondItem="upw-A5-2Cb" secondAttribute="trailing" id="nl3-vP-6fN"/>
+                                                <constraint firstAttribute="bottom" secondItem="upw-A5-2Cb" secondAttribute="bottom" id="rck-6Y-10L"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3R0-jH-dcc" firstAttribute="top" secondItem="i4O-jG-g0Q" secondAttribute="topMargin" id="6Iu-bv-HGZ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="3R0-jH-dcc" secondAttribute="bottom" id="hy9-Cq-7Sg"/>
+                                    <constraint firstItem="3R0-jH-dcc" firstAttribute="leading" secondItem="i4O-jG-g0Q" secondAttribute="leadingMargin" id="iKZ-lS-uDy"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="3R0-jH-dcc" secondAttribute="trailing" id="omn-Qq-xbf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="label1" destination="upw-A5-2Cb" id="Rpn-bL-gWe"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="UGR-QK-bB8" id="hlT-Nt-TKs"/>
+                            <outlet property="delegate" destination="UGR-QK-bB8" id="1Ao-ZE-uBk"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Word Collection" id="ZSG-Bs-CO9"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbl-IG-YKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-1322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Lr-Wz-r5r">
@@ -309,7 +375,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSL-Qe-90g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="-752"/>
+            <point key="canvasLocation" x="457" y="-629"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xjG-3T-WSX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B6t-Vd-bqY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Uok-qv-ccL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="unV-0r-ORi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UGR-QK-bB8" kind="relationship" relationship="rootViewController" id="bOl-tJ-M8z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqz-iY-leW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="-1321"/>
         </scene>
     </scenes>
 </document>

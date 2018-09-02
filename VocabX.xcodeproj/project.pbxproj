@@ -19,6 +19,7 @@
 		0AB1E070213B036E001EE601 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E06F213B036E001EE601 /* ColorExt.swift */; };
 		0AB1E072213B1012001EE601 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E071213B1012001EE601 /* TestingViewController.swift */; };
 		0AB1E074213B50B7001EE601 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E073213B50B7001EE601 /* Question.swift */; };
+		0AB1E079213C6631001EE601 /* VocabCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E078213C6631001EE601 /* VocabCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0AB1E06F213B036E001EE601 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		0AB1E071213B1012001EE601 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		0AB1E073213B50B7001EE601 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0AB1E078213C6631001EE601 /* VocabCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				0AB1E0512138A1DA001EE601 /* AppDelegate.swift */,
 				0AB1E0532138A1DA001EE601 /* ViewController.swift */,
+				0AB1E078213C6631001EE601 /* VocabCollectionViewController.swift */,
 				0AB1E0552138A1DA001EE601 /* Main.storyboard */,
 				0AB1E0582138A1DC001EE601 /* Assets.xcassets */,
 				0AB1E05A2138A1DC001EE601 /* LaunchScreen.storyboard */,
@@ -78,6 +81,7 @@
 				0AB1E06D213AF1CF001EE601 /* DetailViewController.swift */,
 				0AB1E0682138B09E001EE601 /* Cells */,
 				0AB1E0652138A207001EE601 /* Models */,
+				0AB1E077213C5AFA001EE601 /* CustomSegues */,
 			);
 			path = VocabX;
 			sourceTree = "<group>";
@@ -99,6 +103,13 @@
 				0AB1E0692138B0C3001EE601 /* CollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0AB1E077213C5AFA001EE601 /* CustomSegues */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomSegues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				0AB1E06E213AF1CF001EE601 /* DetailViewController.swift in Sources */,
 				0AB1E0522138A1DA001EE601 /* AppDelegate.swift in Sources */,
 				0AB1E0642138A200001EE601 /* VocabWord.swift in Sources */,
+				0AB1E079213C6631001EE601 /* VocabCollectionViewController.swift in Sources */,
 				0AB1E070213B036E001EE601 /* ColorExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
